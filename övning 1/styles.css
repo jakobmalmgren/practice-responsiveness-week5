@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0.4rem;
+  margin: 0;
+  height: 100vh;
+}
+header {
+  background-color: purple;
+  min-height: 10%;
+}
+main {
+  height: 80%;
+  padding: 0.3rem;
+}
+.main-aside-left {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-left {
+  background-color: rgb(137, 60, 131);
+  min-height: 18%;
+}
+section {
+  min-height: 20%;
+  background-color: white;
+}
+.main-aside-right {
+  min-height: 20%;
+  background-color: pink;
+}
+footer {
+  min-height: 10%;
+  background-color: rgb(92, 173, 92);
+}
+
+@media screen and (min-width: 760px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0rem;
+  }
+  .main-aside-left,
+  section,
+  .main-aside-right {
+    min-width: 33%;
+    min-height: 100%;
+  }
+}
